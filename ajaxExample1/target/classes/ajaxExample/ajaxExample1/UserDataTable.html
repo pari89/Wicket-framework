@@ -1,0 +1,23 @@
+<html xmlns:wicket="http://wicket.apache.org">
+<wicket:head>  <wicket:link>
+
+    <link rel="stylesheet" type="text/css" href="repeater.css"/>
+
+ </wicket:link></wicket:head>
+<body>
+	<br/>
+   
+   <form wicket:id="filterForm">
+    	<fieldset class="inline-block">
+    		<legend>Born date</legend>
+	    	<span class="float-right">from: <input wicket:id="idFrom"/></span> <br/>
+	    	<span class="float-right">to: <input wicket:id="idTo"/></span>
+    	</fieldset>
+
+ 	<div>
+    	   <table class="dataview" wicket:id="tableWithFilterForm"></table>
+    	</div>
+    
+ </form>
+</body>
+</html>
